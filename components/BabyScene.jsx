@@ -89,6 +89,7 @@ export default function BabyScene() {
           </button>
         ))}
       </div>
+      <h1 className='font-bold text-[24px] text-center'>Static 3D element Multiple camera view in a room</h1>
 
       <Canvas style={{ height: 500, width: '100%' }}>
         <SceneContent currentCam={currentCam} />

@@ -6,12 +6,14 @@ import ManGridView from '../components/ManGridView'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6">
-      <PersonTrackerDemo />
-      <Person3DRotation/>
-      <CameraScene/>
-      <BabyScene/>
+      <div className='grid grid-cols-2'> 
+      <CameraScene/> 
       <ManGridView/>
-      {/*<AlertPulse/>*/}
+      <BabyScene/>
+      <Person3DRotation/>
+      <PersonTrackerDemo />
+      </div>
+
     </main>
   )
 }

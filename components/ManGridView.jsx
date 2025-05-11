@@ -15,6 +15,10 @@ export default function ManGridView() {
   const sharedPosition = useRef([0, 0.5, 0]) // same man position for all views
 
   return (
+    <>
+    <div>
+          <h1 className='font-bold text-[24px] text-center'>Moving element Multiple camera view in a room</h1>
+
     <div className="grid grid-cols-2 gap-4 p-4">
       {cameraAngles.map((pos, idx) => (
         <div key={idx} className="border border-black">
@@ -27,5 +31,7 @@ export default function ManGridView() {
         </div>
       ))}
     </div>
+    </div>
+    </>
   )
 }

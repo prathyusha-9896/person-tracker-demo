@@ -57,7 +57,7 @@ export default function CameraScene() {
           ⚠️ Fall Detected! Notifying caregiver...
         </div>
       )}
-
+      <h1 className='font-bold text-[24px] text-center'>Fall detection with 3D element</h1>
       <Canvas style={{ height: 500, width: '100%' }}>
         <ambientLight intensity={0.4} />
         <directionalLight position={[2, 3, 5]} />
