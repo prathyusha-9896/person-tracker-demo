@@ -51,13 +51,14 @@ export default function CameraScene() {
   }, [])
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full bg-white text-black py-10 justify-center items-center flex ">
       {isFallen && (
         <div className="absolute top-4 left-4 z-10 p-4 bg-red-600 text-white rounded-lg shadow-lg animate-pulse">
           ⚠️ Fall Detected! Notifying caregiver...
         </div>
       )}
-      <h1 className='font-bold text-[24px] text-center'>Fall detection with 3D element</h1>
+      <div className='rounded-md shadow-xl shadow-blue-300 w-1/2 justify-center items-center flex flex-col'>
+      <h1 className='font-bold text-4xl py-8 text-blue-800 text-center'>Fall detection with 3D element</h1>
       <Canvas style={{ height: 500, width: '100%' }}>
         <ambientLight intensity={0.4} />
         <directionalLight position={[2, 3, 5]} />
@@ -66,6 +67,7 @@ export default function CameraScene() {
         </Suspense>
         <OrbitControls />
       </Canvas>
+      </div>
     </div>
   )
 }

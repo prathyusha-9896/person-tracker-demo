@@ -25,7 +25,7 @@ export function Man({ positionRef }) {
   return (
     <mesh ref={ref} position={[0, 0.5, 0]}>
       <boxGeometry args={[0.5, 1, 0.5]} />
-      <meshStandardMaterial color="orange" />
+      <meshStandardMaterial color="#3730a3" />
     </mesh>
   )
 }
@@ -34,7 +34,7 @@ export function Room() {
   return (
     <mesh position={[0, -0.5, 0]}>
       <boxGeometry args={[10, 1, 10]} />
-      <meshStandardMaterial color="#999" />
+      <meshStandardMaterial color="#ffffff" />
     </mesh>
   )
 }

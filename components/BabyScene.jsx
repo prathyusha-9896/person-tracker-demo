@@ -82,14 +82,14 @@ export default function BabyScene() {
         {Object.keys(cameraPositions).map((cam) => (
           <button
             key={cam}
-            className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-800"
+            className="bg-pink-400 text-white px-3 py-1 rounded hover:bg-pink-600"
             onClick={() => setCurrentCam(cam)}
           >
             {cam}
           </button>
         ))}
       </div>
-      <h1 className='font-bold text-[24px] text-center'>Static 3D element Multiple camera view in a room</h1>
+      <h1 className='font-bold text-[24px] text-center'>Static <span className='text-blue-500'>3D element</span> Multiple camera view in a room</h1>
 
       <Canvas style={{ height: 500, width: '100%' }}>
         <SceneContent currentCam={currentCam} />

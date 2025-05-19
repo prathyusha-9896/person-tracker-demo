@@ -16,15 +16,15 @@ export default function ManGridView() {
 
   return (
     <>
-    <div>
-          <h1 className='font-bold text-[24px] text-center'>Moving element Multiple camera view in a room</h1>
+    <div >
+          <h1 className='font-bold text-4xl text-center'>Moving element <span className='text-blue-500'> Multiple camera</span> <br /> view in a room</h1>
 
-    <div className="grid grid-cols-2 gap-4 p-4">
+    <div className="grid grid-cols-2 gap-4 py-10 px-56">
       {cameraAngles.map((pos, idx) => (
-        <div key={idx} className="border border-black">
-          <div className="text-sm font-bold text-center bg-black text-white py-1">CAM {idx + 1}</div>
-          <Canvas style={{ height: 250, background: '#000' }}>
-            <Suspense fallback={null}>
+        <div key={idx} className="">
+          <div className="text-sm font-bold text-center text-white">CAM {idx + 1}</div>
+          <Canvas style={{ height: 250, }} className='rounded-2xl bg-blue-200'>
+            <Suspense fallback={null} >
               <SceneView camPosition={pos} positionRef={sharedPosition} />
             </Suspense>
           </Canvas>
